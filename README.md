@@ -57,20 +57,41 @@ Respose Body code 200 OK
 }
 ```
 
-### Get Shop
+### Get closest Shop
+
+Request
+```html
+GET /shop?latitude=51.52156840000001&amp;longitude=-0.1123096 HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: d71fe793-acc5-8624-0f56-9ee60ba35fd7
+```
 
 GET request to http://localhost:8080/shop?latitude=51.52156840000001&longitude=-0.1077042
 
 RESPONSE
 ```html
+Respose Body code 200 OK
+```json
 {
   "shopName": "Simply Food 2",
   "shopAdress": {
     "number": "323-324",
     "street": "High Holborn",
     "postCode": "WC1V"
+  },
+  "geoPosition": {
+    "lat": 51.51801520000001,
+    "lng": -0.1123096
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:8080/shop/Simply%20Food%202"
+    }
   }
 }
+```
 ```
 
 ## Installation
