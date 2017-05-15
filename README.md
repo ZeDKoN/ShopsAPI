@@ -147,7 +147,7 @@ dependencies {
 
 ## Building & Running the Project
     Building the project
-     $ .gradle build
+     $ ./gradle build
     gradlew bootRun
     
     # Compile and package the project
@@ -169,7 +169,7 @@ To run the test:
 ## Solution expansion
 The solution could be expanded with the following features:
 
-* Securing service with org.springframework.boot:spring-boot-starter-security
+* Securing the service with org.springframework.boot:spring-boot-starter-security
 * Persistence layer with JPA.
 * JBehave BDD testing.
 
@@ -177,12 +177,12 @@ The solution could be expanded with the following features:
 
 ## Extend solution testing
 
-I would deploy the application in a CI server, such us Jenkins on TeamCicty, In the CI server we could create a task/build to launch the unit Test e integration test, we could would be to deploy the service in a VM/Host.
+The application could be  deployed in a CI server, such us Jenkins on TeamCicty, In the CI server we could create a task/build to launch both unit tests e integration test, after thise the service could be deployed in a VM/Host.
 
-I would also implement BDD test with Jbehave libray(BDD stories), after deploying with docker I would create a trigger/task to launch the BDD end to end tests.
+We could also implement BDD tests for intance with the Jbehave libray(BDD stories), after deploying with docker for instance we could create a trigger/task to launch the BDD test. Those tests should be end to end tests.
 
 
-To control the build stability, we could schedule previous tasks, or create a trigger in the CI server, this trigger could be executed for instance every time that a colleague is pulling something into master branch.
+To control the build stability, we could either scheduled previous stepsin CI, or/and create a trigger, this trigger could be executed for instance every time that a colleague is pulling something into the master branch.
 
 Enough testing coverage would make possible to avoid issues and increase the frequency we are releasing to PROD.
 
