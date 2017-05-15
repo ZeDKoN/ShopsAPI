@@ -13,7 +13,7 @@ Java 1.8 or later.
 
 ## Code Example
 
-You can consume the Rest microservice with any Rest client, I suggest to use Google Postman
+You can consume the Rest microservice with any Rest client, I suggest to use Google Postman.
 
 
 ### Save Shop
@@ -68,10 +68,6 @@ Cache-Control: no-cache
 Postman-Token: d71fe793-acc5-8624-0f56-9ee60ba35fd7
 ```
 
-GET request to http://localhost:8080/shops?latitude=51.52156840000001&longitude=-0.1077042
-
-RESPONSE
-```html
 Respose Body code 200 OK
 ```json
 {
@@ -92,6 +88,43 @@ Respose Body code 200 OK
   }
 }
 ```
+
+### Get Shop
+
+Request
+```html
+GET /shops/Simply%20Food%201 HTTP/1.1
+Host: localhost:8080
+Cache-Control: no-cache
+Postman-Token: d9538aed-c7a1-dd12-e390-68e8a213e8c3
+```
+
+Respose Body code 200 OK
+```json
+{
+  "shopName": "Simply Food 1",
+  "shopAdress": {
+    "number": "323-324",
+    "street": "High Holborn",
+    "postCode": "WC1V"
+  },
+  "geoPosition": {
+    "lat": 51.51801520000001,
+    "lng": -0.1123096
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:8080/shops/Simply%20Food%201"
+    }
+  }
+}
+```
+Respose ERROR Body code 404 OK
+```json
+{
+  "code": "404",
+  "message": "Shop not found"
+}
 ```
 
 ## Installation
@@ -112,15 +145,20 @@ dependencies {
 }
 ```
 
-## Building the Project
-
+## Building & Running the Project
+    Building the project
+     $ .gradle build
+    gradlew bootRun
+    
     # Compile and package the project
     $ ./gradlew jar
-
+    
+    Running the standalone service
+     $ ./gradlew bootRun
 
 ## Tests
 
-Integration and unit tests has been created, the solution could be expanded with BDD, but it would required more time. Validation are performed in the controller with JSR-303 using @Validated annotation. The exceptions have been captured with a CustomHanlder.
+Integration and unit tests has been created, the solution could be expanded with BDD, but this would required more time. Validations are performed in the controller with JSR-303 using @Validated annotation. The exceptions have been captured with a CustomHanlder.
 
 To run the test:
 
