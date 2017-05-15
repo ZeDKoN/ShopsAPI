@@ -160,8 +160,8 @@ Those could also be integrated with Mesosphere that would be in charge of the se
 We can deploy in in cloud infrastructure, a creating containers to be run in VM/HostMachin with docker, and a system of cluster management like OpenShift.
 
 ## Author
-Francisco San Roman
-Please for any question, contact me at franciscosanroman@gmail.com
+Francisco San Roman 
+For any question, contact me at franciscosanroman@gmail.com
 
 ## License
 
