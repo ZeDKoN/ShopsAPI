@@ -110,7 +110,8 @@ To run the test:
 ## Solution expansion
 The solution could be expanded with the following features:
 
-* Persistence with JPA layer.
+* Securing service with org.springframework.boot:spring-boot-starter-security
+* Persistence layer with JPA.
 * JBehave BDD testing.
 
 
@@ -139,7 +140,7 @@ We can deploy in in cloud infrastructure, a creating containers to be run in VM/
 
 ## Author
 Francisco San Roman
-Please for any question you can contcat me at franciscosanroman@gmail.com
+Please for any question, contact me at franciscosanroman@gmail.com
 
 ## License
 
