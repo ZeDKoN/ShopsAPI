@@ -20,7 +20,7 @@ You can consume the Rest microservice with any Rest client, I suggest to use Goo
 
 Request
 ```HTML
-POST /shop HTTP/1.1
+POST /shops HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 Cache-Control: no-cache
@@ -51,7 +51,7 @@ Respose Body code 200 OK
   },
   "_links": {
     "self": {
-      "href": "http://localhost:8080/shop/Simply%20Food%202"
+      "href": "http://localhost:8080/shops/Simply%20Food%202"
     }
   }
 }
@@ -61,14 +61,14 @@ Respose Body code 200 OK
 
 Request
 ```html
-GET /shop?latitude=51.52156840000001&amp;longitude=-0.1123096 HTTP/1.1
+GET /shops?latitude=51.52156840000001&amp;longitude=-0.1123096 HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 Cache-Control: no-cache
 Postman-Token: d71fe793-acc5-8624-0f56-9ee60ba35fd7
 ```
 
-GET request to http://localhost:8080/shop?latitude=51.52156840000001&longitude=-0.1077042
+GET request to http://localhost:8080/shops?latitude=51.52156840000001&longitude=-0.1077042
 
 RESPONSE
 ```html
@@ -87,7 +87,7 @@ Respose Body code 200 OK
   },
   "_links": {
     "self": {
-      "href": "http://localhost:8080/shop/Simply%20Food%202"
+      "href": "http://localhost:8080/shops/Simply%20Food%202"
     }
   }
 }
