@@ -195,7 +195,7 @@ Those could also be integrated with Mesosphere that would be in charge of the se
 
 ## Deployment into production
 
-We can deploy on cloud infrastructure, a creating containers to be run in VM/HostMachin with docker, and a system of cluster management like OpenShift.
+We can deploy on cloud infrastructure, for instance creating containers to be run in VM/HostMachin with docker, and a system of cluster management like OpenShift.
 
 ## Author
 Francisco San Roman 
